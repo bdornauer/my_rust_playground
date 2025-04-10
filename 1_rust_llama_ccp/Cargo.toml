@@ -1,0 +1,10 @@
+[package]
+name = "rust_llama_ccp"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+llama_cpp = { version = "0.3.2", features = ["metal"] }
+
+[features]
+metal = ["llama_cpp/metal"]

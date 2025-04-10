@@ -1,0 +1,19 @@
+[package]
+name = "test_it"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.96"
+clap = { version = "4.5.31", features = ["derive"] }
+encoding_rs = "0.8.35"
+hf-hub = "0.4.2"
+llama-cpp-2 = {version = "0.1.102", features = ["metal"]}
+tracing-subscriber = "0.3.19"
+serde_json = "1.0.140"
+
+[features]
+cuda = ["llama-cpp-2/cuda"]
+metal = ["llama-cpp-2/metal"]
+native = ["llama-cpp-2/native"]
+vulkan = ["llama-cpp-2/vulkan"]
