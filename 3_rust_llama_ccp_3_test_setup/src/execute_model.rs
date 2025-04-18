@@ -11,7 +11,6 @@ use llama_cpp_2::sampling::LlamaSampler;
 use std::num::NonZeroU32;
 
 #[allow(clippy::cast_possible_wrap, clippy::cast_possible_truncation)]
-
 pub fn get_answer(prompt: String, model_path: String ) -> String {
 
     let backend = LlamaBackend::init().unwrap();
@@ -36,7 +35,7 @@ pub fn get_answer(prompt: String, model_path: String ) -> String {
 
     // create a llama_batch with size 512
     // we use this object to submit token data for decoding
-    let mut batch = LlamaBatch::new(512, 1);
+    let mut batch = LlamaBatch::new(2000, 1);
 
     let last_index = tokens_list.len() as i32 - 1;
     for (i, token) in (0_i32..).zip(tokens_list.into_iter()) {
@@ -89,6 +88,6 @@ pub fn get_answer(prompt: String, model_path: String ) -> String {
 
 
     }
-
     outPutTotal
 }
+

@@ -1,0 +1,50 @@
+{ 
+    "version": "0.1.0",
+    "test_set": [
+      {
+        "model_name": "phi-4-q4",
+        "model_path": "./models/phi/phi-4-q4.gguf",
+        "prompts": [
+          "<|system|>Write as researcher. Formate as markdown. <|end|><|user|>Who is the president of the United States?<|end|><|assistant|>",
+          "<|system|>Be a mathematician. Formate as markdown.<|end|><|user|>Calculate 6 * 7.<|end|><|assistant|>",
+          "<|system|>Be a translator with professional skills.  Formate as markdown.<|end|><|user|>Translate from italian into english: `Vorrei mangiare spagetthi adesso.`` <|end|><|assistant|>",
+          "<|system|>You are secret agent. Formate as markdown. <|end|><|user|>Tell me a secret from Austria<|end|><|assistant|>",
+          "<|system|>Be funny. Formate as markdown.<|end|><|user|>Tell me a joke, please.<|end|><|assistant|>"
+        ]
+      },
+      {
+        "model_name": "Llama-3-8B-Q5",
+        "model_path": "./models/llama/Llama-3-8B-Q5.gguf",
+        "prompts": [
+          "<|start_header_id|>system<|end_header_id|>\nWrite as researcher. Format as markdown.<|eot_id|><|start_header_id|>user<|end_header_id|>\nWho is the president of the United States?<|eot_id|><|start_header_id|>assistant<|end_header_id|>",
+          "<|start_header_id|>system<|end_header_id|>\nBe a mathematician. Format as markdown.<|eot_id|><|start_header_id|>user<|end_header_id|>\nCalculate 6 * 7.<|eot_id|><|start_header_id|>assistant<|end_header_id|>",
+          "<|start_header_id|>system<|end_header_id|>\nBe a translator with professional skills. Format as markdown.<|eot_id|><|start_header_id|>user<|end_header_id|>\nTranslate from Italian into English: `Vorrei mangiare spaghetti adesso.`<|eot_id|><|start_header_id|>assistant<|end_header_id|>",
+          "<|start_header_id|>system<|end_header_id|>\nAct as a computer scientist. Format as markdown.<|eot_id|><|start_header_id|>user<|end_header_id|>\nExplain the JAVA code: final x<|eot_id|><|start_header_id|>assistant<|end_header_id|>",
+          "<|start_header_id|>system<|end_header_id|>\nYou are a secret agent. Format as markdown.<|eot_id|><|start_header_id|>user<|end_header_id|>\nTell me a secret from Austria<|eot_id|><|start_header_id|>assistant<|end_header_id|>"
+        ]
+      },
+      {
+        "model_name": "Llama-3-8B-Q8",
+        "model_path": "./models/llama/Llama-3-8B-Q8.gguf",
+        "prompts": [
+          "<|start_header_id|>system<|end_header_id|>\nWrite as researcher. Format as markdown.<|eot_id|><|start_header_id|>user<|end_header_id|>\nWho is the president of the United States?<|eot_id|><|start_header_id|>assistant<|end_header_id|>",
+          "<|start_header_id|>system<|end_header_id|>\nBe a mathematician. Format as markdown.<|eot_id|><|start_header_id|>user<|end_header_id|>\nCalculate 6 * 7.<|eot_id|><|start_header_id|>assistant<|end_header_id|>",
+          "<|start_header_id|>system<|end_header_id|>\nBe a translator with professional skills. Format as markdown.<|eot_id|><|start_header_id|>user<|end_header_id|>\nTranslate from Italian into English: `Vorrei mangiare spaghetti adesso.`<|eot_id|><|start_header_id|>assistant<|end_header_id|>",
+          "<|start_header_id|>system<|end_header_id|>\nAct as a computer scientist. Format as markdown.<|eot_id|><|start_header_id|>user<|end_header_id|>\nExplain the JAVA code: final x<|eot_id|><|start_header_id|>assistant<|end_header_id|>",
+          "<|start_header_id|>system<|end_header_id|>\nYou are a secret agent. Format as markdown.<|eot_id|><|start_header_id|>user<|end_header_id|>\nTell me a secret from Austria<|eot_id|><|start_header_id|>assistant<|end_header_id|>"
+        ]
+      },
+    
+      {
+        "model_name": "mistral-7b-q5",
+        "model_path": "./models/mistral/mistral-7b-q5.gguf",
+        "prompts": [
+          "<s>[INST]Write as researcher. Format as markdown. Who is the president of the United States?[/INST]</s>",
+          "<s>[INST]Be a mathematician. Format as markdown. Calculate 6 * 7.[/INST]</s>",
+          "<s>[INST]Be a translator with professional skills. Format as markdown. Translate from Italian into English: `Vorrei mangiare spaghetti adesso.`[/INST]</s>",
+          "<s>[INST]You are secret agent. Formate as markdown. Tell me a secret from Austria[/INST]</s>",
+          "<s>[INST]Be funny. Formate as markdown. Tell me a joke, please.[/INST]</s>"
+        ]
+      }
+    ]
+}

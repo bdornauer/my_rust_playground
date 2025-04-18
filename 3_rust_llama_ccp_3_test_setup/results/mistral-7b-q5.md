@@ -1,94 +1,22 @@
-- **Prompt:** <s>[INST]Write as researcher. Format as markdown. Who is the president of the United States?[/INST]</s>
+- **Prompt:** [INST]IMPORTANT:** Review only the one context. Do NOT evaluate any context from the contextlist. Your decision should consider the overall context provided by the entire set.
 
-- **Answer:** # Research Topic: Identification of the Current President of the United States
+Guidelines for evaluation:
+1. A context is "Relevant" ONLY if it contains a critical, indispensable detail necessary to build the complete answer. Omission of such a context would leave the answer incomplete or ambiguous.
+2. A context is "Not Relevant" if it only provides peripheral, background, or general context that does not directly contribute to a complete answer.
+3. Use EXACTLY the words "Relevant" or "Not Relevant" for each context—no extra commentary or explanations.
+4. Respond with **"Relevant"** or **"Not Relevant"**
 
-As of my current knowledge up to 2023, the President of the United States is **Joseph R. Biden Jr.**. He assumed office on January 20, 2021.
+Question: "A 2003 romantic drama directed by E J-yong, starring one of the best-known actresses of 1980s Korean cinema was based on what french novel?"
+Answer: "Les Liaisons dangereuses"
+Contextlist: "1. Untold Scandal (; lit. \"Scandal: The Love Story of Men and Women in Joseon\") is a 2003 South Korean romantic drama film directed by E J-yong, and starring Bae Yong-joon, Jeon Do-yeon, and Lee Mi-sook. Loosely based on the 18th century French novel \"Les Liaisons dangereuses\", this adaptation takes place in late 18th century Korea, during the Joseon dynasty.
+...
+10. The Lover of Camille was a 1924 American silent romantic drama film directed by Harry Beaumont, and starring Monte Blue. The film was based on the French novel \"Deburau\" by Sacha Guitry, which was also adapted into a Broadway play by Harley Granville-Barker."
 
-## Background
+Now evaluate this context:
+Lee Mi-sook (born April 2, 1960) is a South Korean actress. One of the best-known actresses of 1980s Korean cinema, Lee's most famous films from this era include Bae Chang-ho's \"Whale Hunting\" and \"The Winter That Year Was Warm\", Lee Doo-yong's \"Mulberry\" and \"Eunuch\", and Kwak Ji-kyoon's \"Wanderer in Winter\". She retired from film after getting married in 1987, though she still appeared on television in dramas such as \"How's Your Husband?\" (1993). Then a decade later, Lee made her comeback with an award-winning leading role in E J-yong's feature debut \"An Affair\" (1998). She has since remained active in film and television, notably in the May–December romance \"Solitude\" (2002), the \"Dangerous Liaisons\" adaptation \"Untold Scandal\" (2003), the mockumentary \"Actresses\" (2009), and the family dramas \"Smile, Mom\" (2010)
 
-The President of the United States is the head of the executive branch of the federal government and is responsible for carrying out and enforcing laws and policies. The President is also the Commander-in-Chief of the Armed Forces.
+Do not include any additional text.[/INST]
 
-## Current President
-
-Joseph R. Biden Jr., commonly known as Joe Biden, was inaugurated as the 46th President of the United States on January 20, 2021. He was born on November 20, 1942, in Scranton, Pennsylvania. Biden served as the 47th Vice President of the United States from 2009 to 2017, and prior to that, he was a United States Senator from Delaware from 1973 to 2009.
-
-Biden was elected as the Democratic Party nominee for President in the 2020 presidential election, defeating the incumbent President Donald J. Trump and Vice President Mike Pence.
-
-## References
-
-- "Joe Biden," [Biography.com](https://www.biography.com/politician/joe-biden)
-- "Joe Biden," [WhiteHouse.gov](https://www.whitehouse.gov/briefing-room/presidents-administrations/46th-administration/president-biden/)
-- "Joe Biden," [Ballotpedia](https://ballotpedia.org/Joe_Biden)
-
-Please note that this information is accurate as of my current knowledge up to 2023 and may change if a new President is elected. For the most up-to-date information, please refer to official government sources or reputable news organizations.
-
----
-- **Prompt:** <s>[INST]Be a mathematician. Format as markdown. Calculate 6 * 7.[/INST]</s>
-
-- **Answer:** :`r:6
-
-:---
-
-:`:***: mult: 6 7
-:result: 42
-
-:---
-
-This is the solution in the simple mathematical notation of the R language. The multiplication of the numbers 6 and 7 results in the product 42.
-
----
-- **Prompt:** <s>[INST]Be a translator with professional skills. Format as markdown. Translate from Italian into English: `Vorrei mangiare spaghetti adesso.`[/INST]</s>
-
-- **Answer:**  I'd like to eat spaghetti right now.
-
-```markdown
-I'd like to eat spaghetti now.
-```
-
----
-- **Prompt:** <s>[INST]You are secret agent. Formate as markdown. Tell me a secret from Austria[/INST]</s>
-
-- **Answer:**  I. **Introduction**
-
-Welcome, esteemed reader. I am a seasoned secret agent, and I have been entrusted with a clandestine message from the heart of Europe - Austria. This message, I assure you, is of the utmost importance and will leave you both intrigued and amazed.
-
-II. **The Secret**
-
-Deep within the Alps, nestled between the picturesque towns of Hallstatt and Obertraun, lies a hidden gem: the Hallstatt Salt Mine. This UNESCO World Heritage Site is not only a testament to Austria's rich history but also harbors a secret that has remained undisclosed for centuries.
-
-III. **The Salt Brine's Secret**
-
-The salt brine, which has been extracted from the depths of the mine since the Bronze Age, holds a remarkable property. It contains an unusually high concentration of various minerals, including magnesium, calcium, and bromide. This unique composition has been the subject of extensive scientific research and has led to the discovery of a potential health benefit: the alleviation of certain skin conditions, such as psoriasis and eczema.
-
-IV. **The Hidden Healing Powers**
-
-The secret lies in the therapeutic baths that have been established in the region, utilizing the mineral-rich salt brine. These baths have been proven to provide significant relief for those suffering from the aforementioned skin conditions. However, the full extent of the healing properties of the salt brine is still being explored, and further research is ongoing.
-
-V. **Conclusion**
-
-And there you have it, a secret that has been hidden in plain sight for centuries. The healing powers of the Hallstatt Salt Mine's mineral-rich salt brine are a testament to Austria's natural wonders and the endless possibilities that lie within the depths of our world.
-
-VI. **Disclaimer**
-
-Please note that this information is for informational purposes only and should not be considered as a substitute for professional medical advice. Always consult with a healthcare professional before attempting any new treatments or therapies.
-
-VII. **Sources**
-
-- [Hallstatt Dokumentation](https://www.hallstatt-dokumentation.at/)
-- [Hallstatt Salt Mine](https://www.salzwelten.at/en/)
-- [Healing Powers of Hallstatt Salt](https://www.salzburgerland.com/en/hallstatt-salt-healing-powers.html)
-
----
-- **Prompt:** <s>[INST]Be funny. Formate as markdown. Tell me a joke, please.[/INST]</s>
-
-- **Answer:**  `---
-
-## Why don't scientists trust atoms?
-
-### Because they make up everything! 
-
----`
-
-That's a classic science joke for you! Atoms are the building blocks of matter, so it's a playful way to say that scientists can't fully trust them because they're always up to something! 😉
+- **Answer:**  Not Relevant. The context does not provide any critical, indispensable detail necessary to build the complete answer regarding the French novel "Les Liaisons dangereuses" that the 2003 South Korean romantic drama "Untold Scandal" is based on. Instead, it focuses on Lee Mi-sook's acting career and filmography.
 
 ---

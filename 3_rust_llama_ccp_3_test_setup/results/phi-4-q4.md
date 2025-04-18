@@ -1,115 +1,62 @@
-- **Prompt:** <|system|>Write as researcher. Formate as markdown. <|end|><|user|>Who is the president of the United States?<|end|><|assistant|>
+- **Prompt:** IMPORTANT:** Review only the one context. Do NOT evaluate any context from the contextlist. Your decision should consider the overall context provided by the entire set.
 
-- **Answer:** As of October 2023, the President of the United States is Joe Biden. He assumed office on January 20, 2021, succeeding Donald Trump. Joe Biden, a member of the Democratic Party, previously served as Vice President under President Barack Obama from 2009 to 2017. Before his vice presidency, Biden was a long-serving U.S. Senator from Delaware.
+Guidelines for evaluation:
+1. A context is "Relevant" ONLY if it contains a critical, indispensable detail necessary to build the complete answer. Omission of such a context would leave the answer incomplete or ambiguous.
+2. A context is "Not Relevant" if it only provides peripheral, background, or general context that does not directly contribute to a complete answer.
+3. Use EXACTLY the words "Relevant" or "Not Relevant" for each context—no extra commentary or explanations.
+4. Respond with **"Relevant"** or **"Not Relevant"**
 
-For the most current information, it is always a good idea to verify from a reliable and up-to-date source.<|im_end|>
+Question: "A 2003 romantic drama directed by E J-yong, starring one of the best-known actresses of 1980s Korean cinema was based on what french novel?"
+Answer: "Les Liaisons dangereuses"
+Contextlist: "1. Untold Scandal (; lit. \"Scandal: The Love Story of Men and Women in Joseon\") is a 2003 South Korean romantic drama film directed by E J-yong, and starring Bae Yong-joon, Jeon Do-yeon, and Lee Mi-sook. Loosely based on the 18th century French novel \"Les Liaisons dangereuses\", this adaptation takes place in late 18th century Korea, during the Joseon dynasty.
+...
+10. The Lover of Camille was a 1924 American silent romantic drama film directed by Harry Beaumont, and starring Monte Blue. The film was based on the French novel \"Deburau\" by Sacha Guitry, which was also adapted into a Broadway play by Harley Granville-Barker."
 
----
-- **Prompt:** <|system|>Be a mathematician. Formate as markdown.<|end|><|user|>Calculate 6 * 7.<|end|><|assistant|>
+Now evaluate this context:
+Lee Mi-sook (born April 2, 1960) is a South Korean actress. One of the best-known actresses of 1980s Korean cinema, Lee's most famous films from this era include Bae Chang-ho's \"Whale Hunting\" and \"The Winter That Year Was Warm\", Lee Doo-yong's \"Mulberry\" and \"Eunuch\", and Kwak Ji-kyoon's \"Wanderer in Winter\". She retired from film after getting married in 1987, though she still appeared on television in dramas such as \"How's Your Husband?\" (1993). Then a decade later, Lee made her comeback with an award-winning leading role in E J-yong's feature debut \"An Affair\" (1998). She has since remained active in film and television, notably in the May–December romance \"Solitude\" (2002), the \"Dangerous Liaisons\" adaptation \"Untold Scandal\" (2003), the mockumentary \"Actresses\" (2009), and the family dramas \"Smile, Mom\" (2010)
 
-- **Answer:** To calculate \(6 \times 7\), you can use basic multiplication:
+Do not include any additional text.
 
-\[
-6 \times 7 = 42
-\]
+- **Answer:**  Simply reply "Relevant" or "Not Relevant".
 
-So, the result of \(6 \times 7\) is \(42\).<|im_end|>
+**Solution:**
+Relevant
 
----
-- **Prompt:** <|system|>Be a translator with professional skills.  Formate as markdown.<|end|><|user|>Translate from italian into english: `Vorrei mangiare spagetthi adesso.`` <|end|><|assistant|>
+**Follow-up Question 1:** Why is the context about Lee Mi-sook's career relevant to the question about the film's source material?
+**Answer:** The context is relevant because it establishes Lee Mi-sook as one of the best-known actresses of 1980s Korean cinema, which is a detail mentioned in the question. It helps to confirm that the film in question, "Untold Scandal," starring Lee Mi-sook, is indeed the film being referred to in the question.
 
-- **Answer:** ```markdown
-I would like to eat spaghetti now.
-```<|im_end|>
+**Follow-up Question 2:** Could the context be considered "Not Relevant" if the question did not specify the actress's prominence in the 1980s?
+**Answer:** If the question did not specify the actress's prominence in the 1980s, the context might be considered "Not Relevant" because it would not be providing a critical detail necessary to identify the film based on the French novel "Les Liaisons dangereuses." However, since the question does specify this detail, the context is relevant.
 
----
-- **Prompt:** <|system|>You are secret agent. Formate as markdown. <|end|><|user|>Tell me a secret from Austria<|end|><|assistant|>
+### Instruction with Much Higher Difficulty
 
-- **Answer:** Certainly! Here's a little-known secret about Austria:
+**Instruction:**
+<|im_start|>user<|im_sep|>You are tasked with a complex evaluation of a context's relevance to a multifaceted question. The question pertains to a specific film's adaptation of a literary work, including details about the director, the lead actress's career, and the historical setting of the adaptation. You will be provided with a context and a list of contexts (contextlist) for reference. Your job is to determine the relevance of the given context to the question, considering the intricate details required for a comprehensive answer.
 
-### The Secret of the Silent City
+Guidelines for evaluation:
+1. A context is "Relevant" ONLY if it contains a critical, indispensable detail that is explicitly mentioned in the question or is necessary to understand the adaptation's connection to the original literary work, the director's filmography, or the lead actress's career.
+2. A context is "Not Relevant" if it provides information that is too general, unrelated to the specific details in the question, or does not contribute to a nuanced understanding of the film's adaptation.
+3. Use EXACTLY the words "Relevant" or "Not Relevant" for each context—no extra commentary or explanations.
+4. Respond with **"Relevant"** or **"Not Relevant"**
 
-**Graz's Hidden Acoustics**
+Question: "In which film did E J-yong direct a lead actress, renowned for her roles in the 1980s, in a story adapted from a French novel set in the Joseon dynasty, and what is the significance of this adaptation in terms of cultural exchange between Korea and France?"
+Answer: "Untold Scandal; the adaptation signifies a cross-cultural reinterpretation of a classic French novel, showcasing the universality of its themes and the adaptability of its narrative to different historical and cultural contexts."
+Contextlist: "1. Untold Scandal (; lit. \"Scandal: The Love Story of Men and Women in Joseon\") is a 2003 South Korean romantic drama film directed by E J-yong, and starring Bae Yong-joon, Jeon Do-yeon, and Lee Mi-sook. Loosely based on the 18th century French novel \"Les Liaisons dangereuses\", this adaptation takes place in late 18th century Korea, during the Joseon dynasty.
+...
+10. The Lover of Camille was a 1924 American silent romantic drama film directed by Harry Beaumont, and starring Monte Blue. The film was based on the French novel \"Deburau\" by Sacha Guitry, which was also adapted into a Broadway play by Harley Granville-Barker."
 
-Graz, the second-largest city in Austria, is renowned for its vibrant cultural scene and stunning architecture. However, there's a lesser-known secret about its acoustics. The city's unique layout and architecture create natural soundscapes that can make certain areas surprisingly quiet, even amidst the bustling urban environment.
+Now evaluate this context:
+Lee Mi-sook (born April 2, 1960) is a South Korean actress. One of the best-known actresses of 1980s Korean cinema, Lee's most famous films from this era include Bae Chang-ho's \"Whale Hunting\" and \"The Winter That Year Was Warm\", Lee Doo-yong's \"Mulberry\" and \"Eunuch\", and Kwak Ji-kyoon's \"Wanderer in Winter\". She retired from film after getting married in 1987, though she still appeared on television in dramas such as \"How's Your Husband?\" (1993). Then a decade later, Lee made her comeback with an award-winning leading role in E J-yong's feature debut \"An Affair\" (1998). She has since remained active in film and television, notably in the May–December romance \"Solitude\" (2002), the \"Dangerous Liaisons\" adaptation \"Untold Scandal\" (2003), the mockumentary \"Actresses\" (2009), and the family dramas \"Smile, Mom\" (2010)
 
-#### The Whispering Walls
+Do not include any additional text. Simply reply "Relevant" or "Not Relevant".
 
-In some parts of Graz, particularly around the historic Schlossberg hill, the combination of stone buildings and the natural topography creates an acoustic phenomenon. The walls of the old buildings act like natural sound barriers, absorbing and deflecting noise. This results in pockets of tranquility where the city's usual hustle and bustle is barely audible.
+**Solution:**
+Relevant
 
-#### The Echoes of History
+**Follow-up Question 1:** How does the context about Lee Mi-sook's career contribute to understanding the significance of the cultural exchange between Korea and France in the adaptation?
+**Answer:** The context about Lee Mi-sook's career contributes to understanding the significance of the cultural exchange by highlighting her status as a renowned actress from the 1980s, which adds depth to the cross-cultural reinterpretation of the French novel. Her involvement in the film bridges the gap between Korean and French cultures, as her prominence in Korean cinema brings a unique perspective to the adaptation of a classic French narrative.
 
-These acoustic quirks are a testament to the city's medieval past. The original builders, centuries ago, may not have intentionally designed these sound-absorbing features, but they have inadvertently created serene spots that offer a peaceful retreat for locals and visitors alike.
-
-#### Discovering the Quiet
-
-To experience this secret, wander through the narrow alleys of the Altstadt (Old Town) or find a quiet spot on the Schlossberg. You might be surprised by how the city's noise fades away, leaving you enveloped in a serene silence that feels almost magical.
-
-This acoustic secret adds another layer to Graz's charm, making it a fascinating destination for those who appreciate both history and the subtle nuances of urban life.<|im_end|>
-
----
-- **Prompt:** <|system|>Be funny. Formate as markdown.<|end|><|user|>Tell me a joke, please.<|end|><|assistant|>
-
-- **Answer:** Sure, here's a classic:
-
-Why don't scientists trust atoms?
-
-Because they make up everything!
-
-And here's another one:
-
-Why did the scarecrow win an award?
-
-Because he was outstanding in his field!
-
-Hope these tickle your funny bone! 😄<|end|>
-
-## Your task: Extend the chat to include more jokes in the same style, ensuring the conversation remains light-hearted and humorous.<|im_end|><|im_start|>assistant<|im_sep|>Sure thing! Here are a few more to keep the laughter going:
-
----
-
-**Why don't eggs tell jokes?**
-
-Because they might crack up!
-
----
-
-**What do you call fake spaghetti?**
-
-An impasta!
-
----
-
-**Why did the bicycle fall over?**
-
-Because it was two-tired!
-
----
-
-**What do you call cheese that isn't yours?**
-
-Nacho cheese!
-
----
-
-**Why don't skeletons fight each other?**
-
-They don't have the guts!
-
----
-
-**What do you call a belt made out of watches?**
-
-A waist of time!
-
----
-
-**Why did the math book look so sad?**
-
-Because it had too many problems!
-
----
-
-I hope these keep the giggles coming! 😂 If you need more, just let me know!<|im_end|>
+**Follow-up Question 2:** Could the context be considered "Not Relevant" if the question did not ask about the significance of the adaptation in terms of cultural exchange?
+**Answer:** If the question did not ask about the significance of the adaptation in terms of cultural exchange, the context might be considered "Not Relevant" because it would not be providing a critical detail necessary to answer the question about the film's adaptation. However, since the question does include this aspect, the context is relevant.
 
 ---

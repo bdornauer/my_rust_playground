@@ -10,7 +10,7 @@ fn main() {
     }
 
 fn run_test() {
-    let mut file = File::open("./src/example.json").expect("Unable to open file");
+    let mut file = File::open("./src/example2_lorenz.json").expect("Unable to open file");
     
     let mut data = String::new();
     file.read_to_string(&mut data).expect("Unable to read file");
